@@ -1,0 +1,28 @@
+.pagination-container {
+  position: absolute;
+  height: 100%;
+  left: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  .pagination-item {
+    all: unset;
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border: 1px solid #7e7e7e;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.7s ease-in-out;
+
+    &.active {
+      background-color: #7e7e7e;
+      //   height: 14px;
+      box-shadow: 0 0 0 1px #7e7e7e;
+    }
+  }
+}
